@@ -1,0 +1,6 @@
+# ###########################
+# .gitignore for website Ricgraph - Research in context graph.
+# June 4, 2024
+# ###########################
+.idea
+
