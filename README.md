@@ -43,14 +43,22 @@ Read [Download and install Publii](https://getpublii.com/docs/install-publii.htm
   with the name *ricgraph-research-in-context-graph-files.tar*.
 
 ### Install the Ricgraph website on your webserver
-* Transfer the file
-  *ricgraph-research-in-context-graph-files.tar*
-  to your web server, probably to a location
-  such as */srv/www/htdocs*.
 * Login as user *root* on your web server.
-* Go to that directory:
+* Go to the webserver directory on that server.
+  Probably it is in
+  */srv/www/htdocs* or */srv/www/html*. Go to that directory:
   ```
   cd /srv/www/htdocs
+  or 
+  cd /srv/www/html
+  ```
+* Transfer the file
+  *ricgraph-research-in-context-graph-files.tar*
+  from this GitHub repository
+  to your web server, by typing on your webserver
+  in that directory: 
+  ```
+  wget https://github.com/UtrechtUniversity/ricgraph-website/raw/main/ricgraph-website/ricgraph-research-in-context-graph-files.tar
   ```
 * If directory *ricgragh-website* already exists, remove
   all files in it, and continue with the next step.
@@ -75,6 +83,7 @@ Read [Download and install Publii](https://getpublii.com/docs/install-publii.htm
   chmod -R g-w ricgraph-website
   chmod -R o-w ricgraph-website
   ```
+* Make sure your web server configuration file has been configured correctly.
 * Restart your web server.
 * Check if the website is working correctly.
 * Exit from user *root*.
