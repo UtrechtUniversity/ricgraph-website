@@ -1,0 +1,48 @@
+{{!
+	Theme created by TidyCustoms based on Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 & MIT license (html5up.net/license)
+}}
+<ul{{#if level}} class="submenu level-{{level}}" aria-hidden="true"{{/if}}>
+   {{#each items}}
+         <li{{menuItemClasses}}>
+      {{#if link}}
+         <a
+            href="{{menuUrl}}"
+            {{#if title}}
+               title="{{title}}"
+            {{/if}}
+            {{#if target}}
+               target="{{target}}"
+            {{/if}}
+            {{#if rel}}
+               rel="{{rel}}"
+            {{/if}}
+            {{#if items}} 
+               aria-haspopup="true" 
+               class="opener"
+            {{/if}}>
+            {{label}}
+         </a>
+      {{else}}
+         <span            
+            {{#if title}}
+               title="{{title}}"
+            {{/if}} 
+            {{#if items}} 
+               aria-haspopup="true" 
+               class="opener"
+            {{else}}
+               class="is-separator"
+            {{/if}}>
+            {{label}}
+         </span>
+      {{/if}}
+
+      {{#if items}}
+         {{> menu}}
+      {{/if}}
+   </li>
+   {{/each}}
+</ul>
+   

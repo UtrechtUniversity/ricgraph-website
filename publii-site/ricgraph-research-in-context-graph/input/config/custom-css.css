@@ -1,0 +1,62 @@
+/*
+ * Put your custom CSS code here
+ */
+#header {
+    padding-top: 1.5em;
+}
+body { 
+    font-family: "Open Sans", sans-serif;
+    font-size: 120%; 
+}
+body, input, select, textarea {
+    color: black;
+}
+.post {
+    padding: 2em 0;
+}
+.post__header {
+    text-align: left;
+}
+.post__inner {
+    margin: 0;
+}
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4em;
+}
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+}
+h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+}
+h6 {
+    font-family: "Open Sans", sans-serif;
+    font-variation-settings: "wght" 400;   /* header not in bold, used in footer */
+}
+#sidebar {
+    background-color: #ffcd00;			/* uu-yellow */
+    width: 15em;		/* Note that this value is repeated in other properties */
+}
+#sidebar>.inner {
+    width: 15em;		/* Note that this value is repeated in other properties */
+}
+#sidebar .toggle {
+    left: 15em;			/* Note that this value is repeated in other properties */
+}
+@media (max-width: 1280px) {
+#sidebar .toggle {
+   	left: 24em; 		/* Reset to original value if screen width <= 1280px */
+}
+}
+#sidebar>.inner>* {
+    border-bottom: solid 2px blue;
+}
+a:hover {
+    color: darkblue;
+}
+#menu>ul>li {
+    border-top: solid 1px #0000ff;		/* html blue */
+}

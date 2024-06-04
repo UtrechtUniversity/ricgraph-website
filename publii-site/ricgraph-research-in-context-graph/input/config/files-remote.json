@@ -1,0 +1,252 @@
+[
+    {
+        "path": "404.html",
+        "type": "file",
+        "md5": "e9ef35990c79dd7235b833bfa032379a"
+    },
+    {
+        "path": "assets",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "assets/css",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/css/editor.css",
+        "type": "file",
+        "md5": "e5909a88ba1158a79ba2dbf82d6b2d86"
+    },
+    {
+        "path": "/assets/css/fontawesome-all.min.css",
+        "type": "file",
+        "md5": "85514f933f9e0b82460af63f1a403fa5"
+    },
+    {
+        "path": "/assets/css/main.css",
+        "type": "file",
+        "md5": "fb7a1adeb56e37cdc870928c85e46b75"
+    },
+    {
+        "path": "/assets/css/photoswipe.css",
+        "type": "file",
+        "md5": "da6e9be0fa855edd3610e97c1d4e38d9"
+    },
+    {
+        "path": "/assets/css/style.css",
+        "type": "file",
+        "md5": "64230877bfae18714172fbaa53150bed"
+    },
+    {
+        "path": "assets/dynamic",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "assets/dynamic/fonts",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "assets/dynamic/fonts/instrumentsans",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/dynamic/fonts/instrumentsans/instrumentsans.woff2",
+        "type": "file",
+        "md5": "d08ae1fa029ad57cceaa97d8ad254aa0"
+    },
+    {
+        "path": "assets/js",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/js/breakpoints.min.js",
+        "type": "file",
+        "md5": "81a479eb099e3b187613943b085923b8"
+    },
+    {
+        "path": "/assets/js/browser.min.js",
+        "type": "file",
+        "md5": "c07298dd19048a8a69ad97e754dfe8d0"
+    },
+    {
+        "path": "/assets/js/jquery.min.js",
+        "type": "file",
+        "md5": "7c14a783dfeb3d238ccd3edd840d82ee"
+    },
+    {
+        "path": "/assets/js/main.js",
+        "type": "file",
+        "md5": "1d85deb2c27be8b269021c3f4043467e"
+    },
+    {
+        "path": "/assets/js/main.min.js",
+        "type": "file",
+        "md5": "08add7f6d435054ad38ec38d7cf8be40"
+    },
+    {
+        "path": "/assets/js/photoswipe-ui-default.min.js",
+        "type": "file",
+        "md5": "d067f0883540b1ddda0e2c9ad1b14260"
+    },
+    {
+        "path": "/assets/js/photoswipe.min.js",
+        "type": "file",
+        "md5": "017385b552f7e0d979e2e2fe6f324015"
+    },
+    {
+        "path": "/assets/js/util.js",
+        "type": "file",
+        "md5": "fd2716a7b68ce7748c9676787b61db43"
+    },
+    {
+        "path": "/assets/js/util.min.js",
+        "type": "file",
+        "md5": "cbdaf7c20ac2883c77ae23acfbabd47e"
+    },
+    {
+        "path": "assets/svg",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/svg/gallery-icons-dark.svg",
+        "type": "file",
+        "md5": "0c70735af58190b563b2940b7a07007a"
+    },
+    {
+        "path": "/assets/svg/gallery-icons-light.svg",
+        "type": "file",
+        "md5": "0bb1f41e2e459d23628833c37d8532f0"
+    },
+    {
+        "path": "assets/webfonts",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/assets/webfonts/fa-brands-400.ttf",
+        "type": "file",
+        "md5": "7d09abecdcbd61d9f7eed02ad7ed9f3e"
+    },
+    {
+        "path": "/assets/webfonts/fa-brands-400.woff2",
+        "type": "file",
+        "md5": "12129ae64db69ed98868da86ad4542b6"
+    },
+    {
+        "path": "/assets/webfonts/fa-regular-400.ttf",
+        "type": "file",
+        "md5": "49db3589f7cc4e2c2fbd61073450b881"
+    },
+    {
+        "path": "/assets/webfonts/fa-regular-400.woff2",
+        "type": "file",
+        "md5": "1183f80a7de1312c6aaed6cb2040d26b"
+    },
+    {
+        "path": "/assets/webfonts/fa-solid-900.ttf",
+        "type": "file",
+        "md5": "f4242a99ea504fbf8ddefb40c853de4d"
+    },
+    {
+        "path": "/assets/webfonts/fa-solid-900.woff2",
+        "type": "file",
+        "md5": "de8cf878500c5ec452ae912ddb9c7aaa"
+    },
+    {
+        "path": "/assets/webfonts/fa-v4compatibility.ttf",
+        "type": "file",
+        "md5": "d38445641a866e80bccf9cb4c4a03de8"
+    },
+    {
+        "path": "/assets/webfonts/fa-v4compatibility.woff2",
+        "type": "file",
+        "md5": "5f14f683621dbaf2d3644848b74c5a7f"
+    },
+    {
+        "path": "authors",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "authors/rik-dt-janssen",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/authors/rik-dt-janssen/index.html",
+        "type": "file",
+        "md5": "1c42b8418801e2b0f45615041af760fd"
+    },
+    {
+        "path": "contact-2.html",
+        "type": "file",
+        "md5": "3b440220e14178c728083f3ca30c6765"
+    },
+    {
+        "path": "get-ricgraph.html",
+        "type": "file",
+        "md5": "ad3fb905cfc7818e6b9cd339ff09d005"
+    },
+    {
+        "path": "index.html",
+        "type": "file",
+        "md5": "cf65d93d5a75e725b06688c3a6b36b67"
+    },
+    {
+        "path": "learn-more-about-ricgraph.html",
+        "type": "file",
+        "md5": "3720b199630ddbe50e915a7d3caa8306"
+    },
+    {
+        "path": "media",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "media/website",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/media/website/favicon.ico",
+        "type": "file",
+        "md5": "90a7cf680182627c40e02ec14ce2dab0"
+    },
+    {
+        "path": "/media/website/ricgraph_logo.png",
+        "type": "file",
+        "md5": "3dcc3db8fac198f5f9b90bedde800cee"
+    },
+    {
+        "path": "read-more-about-ricgraph.html",
+        "type": "file",
+        "md5": "fc9cb40a2b73db266e08e850aeace853"
+    },
+    {
+        "path": "robots.txt",
+        "type": "file",
+        "md5": "b6216d61c03e6ce0c9aea6ca7808f7ca"
+    },
+    {
+        "path": "tags",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/tags/index.html",
+        "type": "file",
+        "md5": "f512b7e2b03fa7815c9a752984125ef1"
+    },
+    {
+        "path": "what-is-ricgraph.html",
+        "type": "file",
+        "md5": "f14ee73e5294aae15e80c631ac1572be"
+    }
+]

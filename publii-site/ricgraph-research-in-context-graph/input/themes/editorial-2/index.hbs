@@ -1,0 +1,115 @@
+{{!
+	Theme created by TidyCustoms based on Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 & MIT license (html5up.net/license)
+}}
+{{> head}}
+{{> top}}
+{{#checkIf @config.custom.frontSource '==' "post" }}
+   {{> frontpage-post}}
+{{else}}
+   {{#if @renderer.isFirstPage}}
+      {{#featuredPosts}}
+         <section id="banner">
+            <div class="content">
+               <header>
+                  <h1>
+                     <a href="{{url}}">{{title}}</a>
+                  </h1>
+               </header>
+
+               {{#if hasCustomExcerpt}}
+                  {{{ excerpt }}}
+               {{else}}
+                  <p>{{{ excerpt }}}</p>
+               {{/if}}
+
+               {{#if @config.custom.feedReadMore}}
+                  <ul class="actions">
+                     <li>
+                        <a href="{{url}}" class="button">{{ translate 'common.learnMore' }}</a>
+                     </li>
+                  </ul>
+               {{/if}}
+            </div>
+
+            {{#if @config.custom.feedFeaturedImage}}
+               {{#featuredImage}}
+                  {{#if url}}
+                     <a href="{{../url}}" class="image object">
+                        <img
+                           src="{{url}}"
+                           {{#if @config.site.responsiveImages}}
+                              {{responsiveImageAttributes 'featuredImage' srcset.intro sizes.intro}}
+                           {{/if}}
+                           {{ lazyload "lazy" }}
+                           height="{{height}}"
+                           width="{{width}}"
+                           alt="{{alt}}">
+                     </a>
+                  {{/if}}
+               {{/featuredImage}}
+            {{/if}}
+
+         </section>
+      {{/featuredPosts}}
+   {{/if}}
+
+   <section>
+      <header class="major">
+         <h2>{{ translate 'common.recentPosts' }}</h2>
+      </header>
+      <div class="posts">
+         {{#each posts}}
+            <article>
+               {{#if @config.custom.feedFeaturedImage}}
+                  {{#featuredImage}}
+                     {{#if url}}
+                        <a href="{{../url}}" class="image fit">
+                           <img
+                              src="{{url}}"
+                              {{#if @config.site.responsiveImages}}
+                                 {{responsiveImageAttributes 'featuredImage' srcset.card sizes.card}}
+                              {{/if}}
+                              {{ lazyload "lazy" }}
+                              height="{{height}}"
+                              width="{{width}}"
+                              alt="{{alt}}">
+                        </a>
+                     {{/if}}
+                  {{/featuredImage}}
+               {{/if}}
+               <h3>
+                  <a href="{{url}}">{{title}}</a>
+               </h3>
+
+               {{#if hasCustomExcerpt}}
+                  {{{ excerpt }}}
+               {{else}}
+                  <p>{{{ excerpt }}}</p>
+               {{/if}}
+
+               {{#if @config.custom.feedReadMore}}
+                  <ul class="actions">
+                     <li>
+                        <a href="{{url}}" class="button">{{ translate 'common.more' }}</a>
+                     </li>
+                  </ul>
+               {{/if}}
+
+            </article>
+         {{/each}}
+      </div>
+   </section>
+
+   {{> pagination}}
+
+{{/checkIf}}
+
+   </div>
+</div>
+    {{> sidebar}}
+</div>
+
+{{> footer}}
+

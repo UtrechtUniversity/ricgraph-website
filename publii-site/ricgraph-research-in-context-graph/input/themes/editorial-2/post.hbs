@@ -1,0 +1,146 @@
+{{!
+	Theme created by TidyCustoms based on Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 & MIT license (html5up.net/license)
+}}
+{{> head}}
+{{> top}}
+
+   {{#post}}
+      <article class="post">
+            <header class="main post__header">              
+               {{#if @config.post.displayDate}}
+                  <time datetime="{{date createdAt 'YYYY-MM-DDTHH:mm'}}" class="post__date">
+                     {{#checkIf @config.custom.formatDate '!=' 'custom'}}
+                        {{date createdAt @config.custom.formatDate}}
+                     {{else}}
+                        {{date createdAt @config.custom.formatDateCustom}}
+                     {{/checkIf}}
+                  </time>
+               {{/if}}
+
+               <h1>
+                  {{title}}
+               </h1>             
+            </header>
+
+            {{#featuredImage}}
+               {{#if url}}
+                  <figure class="image main{{#checkIf @config.post.featuredImageSize '==' "normal"}} normal{{/checkIf}}">
+                     <img
+                        src="{{url}}"
+                        {{#if @config.site.responsiveImages}}
+                           {{responsiveImageAttributes 'featuredImage' srcset.post sizes.post}}
+                        {{/if}}
+                        {{ lazyload "lazy" }}
+                        height="{{height}}"
+                        width="{{width}}"
+                        alt="{{alt}}">
+                     {{#checkIfAny caption credits}}
+                        <figcaption>
+                           {{caption}}
+                           {{credits}}
+                        </figcaption>                      
+                     {{/checkIfAny}} 
+                  </figure>
+               {{/if}}
+            {{/featuredImage}}
+
+         <div class="post__inner post__entry">           
+            {{{text}}}            
+         </div>
+
+         {{#checkIfAny @config.post.displayLastUpdatedDate @config.post.displayShareButtons @config.post.displayTags  @config.post.displayAuthorBio}}
+            <footer class="post__inner post__footer">
+
+               {{#if @config.post.displayLastUpdatedDate}}
+                  {{#if modifiedAt}}
+                     <p class="post__last-updated">
+                        {{ translate 'post.lastUpdatedDate' }}
+                        {{#checkIf @config.custom.formatDate '!=' 'custom'}}
+                           {{date modifiedAt @config.custom.formatDate}}
+                        {{else}}
+                           {{date modifiedAt @config.custom.formatDateCustom}}
+                        {{/checkIf}}
+                     </p>
+                  {{/if}}
+               {{/if}}
+
+               {{#if @config.post.displayShareButtons}}
+                  {{#checkIfAll @plugins.socialSharing @plugins.socialSharing.state}}
+                     <div class="post__share">
+                        <h3>{{ translate 'post.sharePost' }}</h3>
+                        {{{@customSocialSharing}}}
+                     </div>
+                  {{else}}
+                     <div class="post__share">
+                        <h3>{{ translate 'post.sharePost' }}</h3>
+                        {{> share-buttons}}
+                     </div>
+                  {{/checkIfAll}}          
+               {{/if}}
+
+               {{#if @config.post.displayTags}}
+                  {{#if tags}}
+                     <div class="post__tag">
+                        
+                           <ul>
+                              <li><strong>{{ translate 'post.taggedIn' }}</strong></li>
+                              {{#each tags}}
+                                 <li>
+                                    <a href="{{url}}">{{name}}</a>
+                                 </li>
+                              {{/each}}
+                           </ul>
+                     </div>
+                  {{/if}}
+               {{/if}}                                  
+
+               {{#if @config.post.displayAuthorBio}}
+                  <div class="post__bio">
+                     {{#author}}
+                        {{#if avatar}}                            
+                           <img 
+                              src="{{avatarImage.url}}" 
+                              {{ lazyload "lazy" }}
+                              height="{{avatarImage.height}}"
+                              width="{{avatarImage.width}}"
+                              alt="{{avatarImage.alt}}">                         
+                        {{/if}}
+                        <div>
+                           <h3>
+                              <a href="{{url}}" class="invert" rel="author">{{name}}</a>
+                           </h3>
+                           {{{description}}}
+                        </div>
+                     {{/author}}
+                  </div>
+               {{/if}}
+            </footer>
+         {{/checkIfAny}}
+      </article>
+
+      {{#if @config.post.displayComments}}
+         <div class="comments-area">
+            <div class="post__inner">
+               {{{@commentsCustomCode}}}
+            </div>
+         </div>
+      {{/if}}
+
+      {{#if @customHTML.afterPost}}
+         <div class="banner banner--after-post">
+            <div class="wrapper">
+               {{{@customHTML.afterPost}}}
+            </div>
+         </div>
+      {{/if}}
+
+   {{/post}}
+
+  </div>
+</div>
+    {{> sidebar}}
+</div>
+
+{{> footer}}

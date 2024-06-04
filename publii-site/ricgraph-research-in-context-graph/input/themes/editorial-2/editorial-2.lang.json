@@ -1,0 +1,80 @@
+{
+    "partials": {
+
+        "menu": {
+            "label": "Menu"
+        },
+
+        "sidebar": {
+            "menu": "Menu",
+            "editorPicks": "Editor Pick's",
+            "getInTouch": "Get in touch"
+        },
+        
+        "pagination": {
+            "olderPosts": "Older Posts",
+            "newerPosts": "Newer Posts",
+            "page": "Page",
+            "of": "of"
+        },
+        
+        "top": {
+            "continue": "Continue"
+        }
+    },
+
+    "common": {
+        "recentPosts": "Recent Posts",
+        "more": "More",
+        "learnMore": "Learn more"
+    },
+    
+    "post": {
+        "publishedBy": "By",
+        "sharePost": "Share post:",
+        "lastUpdatedDate": "This article was updated on",
+        "taggedIn": "Tagged in:",
+        "comments": "Comments"
+    },
+
+    "tags": {
+        "tagsPageTitle": "Tags",
+        "description": "Collection of all tags",
+        "post": {
+            "1": "Post",
+            "default": "Posts"
+        }
+    },
+
+    "author": {
+        "visitWebsite": "Visit website"
+    },
+    
+    "error": {
+        "404": "404 Error",
+        "message-1": "Page not found",
+        "message-2": "The page you were looking for appears to have been moved, deleted or does not exist. You could go back to where you were or head straight to our home page.",
+        "button": "Go home"
+
+    },
+
+    "search": {
+        "placeholder": "search...",
+        "labelInput": "Search",
+        "title": "Search",
+        "submit": "Submit"
+    },
+    
+    "socials": {
+        "twitter": "Twitter",
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "linkedIn": "LinkedIn",
+        "vimeo": "Vimeo",
+        "youtube": "YouTube",
+        "pinterest": "Pinterest",
+        "mix": "Mix",
+        "buffer": "Buffer",
+        "whatsapp": "WhatsApp"
+    }
+}

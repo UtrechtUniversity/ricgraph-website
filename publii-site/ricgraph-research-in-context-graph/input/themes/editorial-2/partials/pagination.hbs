@@ -1,0 +1,54 @@
+{{!
+	Theme created by TidyCustoms based on Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 & MIT license (html5up.net/license)
+}}
+<nav class="pagination {{@website.postsOrdering}}">
+   {{#checkIf @website.postsOrdering '==' "desc"}}
+      {{#if @pagination.nextPage}}
+         <a href="{{@pagination.nextPageUrl}}">
+            {{#checkIf @website.postsOrdering '==' "desc"}}
+               {{ translate 'partials.pagination.olderPosts' }}
+            {{else}}
+               {{ translate 'partials.pagination.newerPosts' }}
+            {{/checkIf}}
+         </a>
+      {{/if}}
+      {{#if @pagination.previousPage}}
+         <a href="{{@pagination.previousPageUrl}}">
+            {{#checkIf @website.postsOrdering '==' "desc"}}
+               {{ translate 'partials.pagination.newerPosts' }}
+            {{else}}
+               {{ translate 'partials.pagination.olderPosts' }}
+            {{/checkIf}}
+         </a>
+      {{/if}}
+   {{else}}
+      {{#if @pagination.previousPage}}
+         <a href="{{@pagination.previousPageUrl}}">
+            {{#checkIf @website.postsOrdering '==' "desc"}}
+               {{ translate 'partials.pagination.newerPosts' }}
+            {{else}}
+               {{ translate 'partials.pagination.olderPosts' }}
+            {{/checkIf}}
+         </a>
+      {{/if}}
+      {{#if @pagination.nextPage}}
+         <a href="{{@pagination.nextPageUrl}}">
+            {{#checkIf @website.postsOrdering '==' "desc"}}
+               {{ translate 'partials.pagination.olderPosts' }}
+            {{else}}
+               {{ translate 'partials.pagination.newerPosts' }}
+            {{/checkIf}}
+         </a>
+      {{/if}}
+   {{/checkIf}}
+   
+   <small>
+      {{#if @pagination}}
+         {{ translate 'partials.pagination.page' }} {{@pagination.currentPage}} {{ translate 'partials.pagination.of' }} {{@pagination.totalPages}}
+      {{else}}
+         {{ translate 'partials.pagination.page' }} 1 {{ translate 'partials.pagination.of' }} 1
+      {{/if}}
+   </small>
+</nav>

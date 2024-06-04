@@ -1,0 +1,62 @@
+{{!
+	Theme created by TidyCustoms based on Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 & MIT license (html5up.net/license)
+}}
+
+{{#if @config.custom.shareFacebook}}
+   <a
+      href="https://www.facebook.com/sharer/sharer.php?u={{encodeUrlFragment url}}"
+      class="js-share icon brands fa-facebook"
+      rel="nofollow noopener noreferrer">
+      <span class="label">{{ translate 'socials.facebook' }}</span>
+   </a>
+{{/if}}
+{{#if @config.custom.shareTwitter}}
+   <a
+      href="https://twitter.com/intent/tweet?url={{encodeUrlFragment url}}&amp;via={{#if @config.custom.shareTwitterName}}{{encodeUrlFragment @config.custom.shareTwitterName}}{{else}}{{encodeUrlFragment @website.name}}{{/if}}&amp;text={{encodeUrlFragment title}}"
+      class="js-share icon brands fa-x-twitter"
+      rel="nofollow noopener noreferrer">
+      <span class="label">{{ translate 'socials.twitter' }}</span>
+   </a>
+{{/if}}
+{{#if @config.custom.sharePinterest}}
+   <a
+      href="https://pinterest.com/pin/create/button/?url={{encodeUrlFragment url}}&amp;media={{encodeUrlFragment featuredImage.url}}&amp;description={{encodeUrlFragment title}}"
+      class="js-share icon brands fa-pinterest"
+      rel="nofollow noopener noreferrer">
+      <span class="label">{{ translate 'socials.pinterest' }}</span>
+   </a>
+{{/if}}
+{{#if @config.custom.shareMix}}
+   <a
+      href="https://mix.com/add?url={{encodeUrlFragment url}}"
+      class="js-share icon brands fa-mix"
+      rel="nofollow noopener noreferrer">
+      <span class="label">{{ translate 'socials.mix' }}</span>
+   </a>
+{{/if}}
+{{#if @config.custom.shareLinkedin}}
+   <a
+      href="https://www.linkedin.com/sharing/share-offsite/?url={{encodeUrlFragment url}}"
+      class="js-share icon brands fa-linkedin"
+      rel="nofollow noopener noreferrer">
+      <span class="label">{{ translate 'socials.linkedIn' }}</span>
+   </a>
+{{/if}}
+{{#if @config.custom.shareBuffer}}
+   <a
+      href="https://buffer.com/add?text={{encodeUrlFragment title}}&amp;url={{encodeUrlFragment url}}"
+      class="js-share icon brands fa-buffer"
+      rel="nofollow noopener noreferrer">
+      <span class="label">{{ translate 'socials.buffer' }}</span>
+   </a>
+{{/if}}
+{{#if @config.custom.shareWhatsApp}}
+   <a
+      href="https://api.whatsapp.com/send?text={{encodeUrlFragment title}} {{encodeUrlFragment url}}" 
+      class="js-share icon brands fa-whatsapp"
+      rel="nofollow noopener noreferrer">
+      <span class="label">{{ translate 'socials.whatsapp' }}</span>
+   </a>
+{{/if}}

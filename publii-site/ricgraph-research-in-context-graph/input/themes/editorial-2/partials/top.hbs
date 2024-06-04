@@ -1,0 +1,71 @@
+{{!
+	Theme created by TidyCustoms based on Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 & MIT license (html5up.net/license)
+}}
+<div id="wrapper">
+   <div id="main">
+		<div class="inner">
+
+         <header id="header">
+            <a class="logo{{#if @website.logo}} logo-image{{/if}}" href="{{@website.url}}">
+               {{#if @website.logo}}
+                  <img src="{{@website.logo}}" alt="{{@website.name}}" width="{{@website.logoSize.width}}" height="{{@website.logoSize.height}}">
+               {{else}}
+                  <strong>{{@website.name}}</strong>
+               {{/if}}
+            </a>
+            {{#if @config.custom.socialButtons}}
+               <ul class="icons">
+                     {{#if @config.custom.socialTwitter}}
+                        <li>
+                           <a href="{{@config.custom.socialTwitter}}" class="icon brands fa-x-twitter">
+                              <span class="label">{{ translate 'socials.twitter' }}</span>
+                           </a>
+                        </li>
+                     {{/if}}
+                     {{#if @config.custom.socialFacebook}}
+                        <li>
+                           <a href="{{@config.custom.socialFacebook}}" class="icon brands fa-facebook-f">
+                              <span class="label">{{ translate 'socials.facebook' }}</span>
+                           </a>
+                        </li>
+                     {{/if}}
+                     {{#if @config.custom.socialInstagram}}
+                        <li>
+                           <a href="{{@config.custom.socialInstagram}}" class="icon brands fa-instagram">
+                              <span class="label">{{ translate 'socials.instagram' }}</span>
+                           </a>
+                        </li>
+                     {{/if}}
+                     {{#if @config.custom.socialLinkedin}}
+                        <li>
+                           <a href="{{@config.custom.socialLinkedin}}" class="icon brands fa-linkedin">
+                              <span class="label">{{ translate 'socials.linkedIn' }}</span>
+                           </a>
+                        </li>
+                     {{/if}}
+                     {{#if @config.custom.socialVimeo}}
+                        <li>
+                           <a href="{{@config.custom.socialVimeo}}" class="icon brands fa-vimeo">
+                              <span class="label">{{ translate 'socials.vimeo' }}</span>
+                           </a>
+                        </li>
+                     {{/if}}
+                     {{#if @config.custom.socialPinterest}}
+                        <li>
+                           <a href="{{@config.custom.socialPinterest}}" class="icon brands fa-pinterest">
+                              <span class="label">{{ translate 'socials.pinterest' }}</span>
+                           </a>
+                        </li>
+                     {{/if}}
+                     {{#if @config.custom.socialYoutube}}
+                        <li>
+                           <a href="{{@config.custom.socialYoutube}}" class="icon brands fa-youtube">
+                              <span class="label">{{ translate 'socials.youtube' }}</span>
+                           </a>
+                        </li>
+                     {{/if}}
+               </ul>
+            {{/if}}
+         </header>

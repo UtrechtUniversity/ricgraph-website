@@ -1,0 +1,13 @@
+{{!
+	Theme created by TidyCustoms based on Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 & MIT license (html5up.net/license)
+}}
+{{#checkIf @config.custom.fontBody '!==' "system-ui"}}
+   {{#checkIf @config.custom.fontBody '!==' @config.custom.fontHeadings}}
+      <link rel="preload" href="{{@website.assetsUrl}}/dynamic/fonts/{{@config.custom.fontBody}}/{{@config.custom.fontBody}}.woff2" as="font" type="font/woff2" crossorigin>
+   {{/checkIf}}
+{{/checkIf}}
+{{#checkIf @config.custom.fontHeadings '!==' "system-ui"}}
+   <link rel="preload" href="{{@website.assetsUrl}}/dynamic/fonts/{{@config.custom.fontHeadings}}/{{@config.custom.fontHeadings}}.woff2" as="font" type="font/woff2" crossorigin>
+{{/checkIf}}

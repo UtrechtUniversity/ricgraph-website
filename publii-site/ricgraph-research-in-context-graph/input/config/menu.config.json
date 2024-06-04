@@ -1,0 +1,69 @@
+[
+    {
+        "name": "Main",
+        "position": "mainMenu",
+        "items": [
+            {
+                "id": 1717159894190,
+                "label": "What is Ricgraph?",
+                "title": "",
+                "type": "post",
+                "target": "_self",
+                "rel": "",
+                "link": 5,
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            },
+            {
+                "id": 1717160462766,
+                "label": "Learn more",
+                "title": "",
+                "type": "post",
+                "target": "_self",
+                "rel": "",
+                "link": 7,
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            },
+            {
+                "id": 1717256181501,
+                "label": "Read more",
+                "title": "",
+                "type": "post",
+                "target": "_self",
+                "rel": "",
+                "link": 8,
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            },
+            {
+                "id": 1717397063296,
+                "label": "Get Ricgraph",
+                "title": "",
+                "type": "post",
+                "target": "_self",
+                "rel": "",
+                "link": 10,
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            },
+            {
+                "id": 1717397788944,
+                "label": "Contact",
+                "title": "",
+                "type": "post",
+                "target": "_self",
+                "rel": "",
+                "link": 11,
+                "cssClass": "",
+                "isHidden": false,
+                "items": []
+            }
+        ],
+        "maxLevels": "-1"
+    }
+]

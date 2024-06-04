@@ -1,0 +1,80 @@
+{{!
+	Theme created by TidyCustoms based on Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 & MIT license (html5up.net/license)
+}}
+<div id="sidebar">
+   <div class="inner">
+
+      {{#if @config.custom.searchFeature}}
+         <div id="search" class="alt">
+            {{{@customSearchInput}}}
+         </div>
+      {{/if}}
+
+      <nav id="menu">
+         <header class="major">
+            <h2>{{ translate 'partials.sidebar.menu' }}</h2>
+         </header>
+         {{#if menus.mainMenu}}
+            {{> menu menus.mainMenu}}
+         {{/if}}
+      </nav>
+
+      {{#if @config.custom.editorPicksTagIndicator}}
+         <section>
+            <header class="major">
+               <h2>{{ translate 'partials.sidebar.editorPicks' }}</h2>
+            </header>
+
+            <div class="mini-posts">
+               {{#getPostsByTags (concatenate "count=" @config.custom.editorPicksItemsAmount "&tag_as=id" "&tags=" @config.custom.editorPicksTagIndicator "&excluded=" @config.custom.editorPicksItemExcluded "&offset=" @config.custom.editorPicksItemOffset "&orderby=modifiedAt" "&ordering=" @config.custom.editorPicksItemOrdering)}}
+                  <article>             
+                     {{#featuredImage}}
+                        {{#if url}}
+                           <a href="{{../url}}" class="image fit">
+                              <img
+                                 src="{{url}}"
+                                 {{#if @config.site.responsiveImages}}
+                                    {{responsiveImageAttributes 'featuredImage' srcset.card sizes.card}}
+                                 {{/if}}
+                                 {{ lazyload "lazy" }}
+                                 height="{{height}}"
+                                 width="{{width}}"
+                                 alt="{{alt}}">
+                           </a>
+                        {{/if}}
+                     {{/featuredImage}}
+                     <h3>
+                        <a href="{{url}}">{{title}}</a>
+                     </h3>
+                     <p>{{{excerpt }}}</p>
+                  </article>
+               {{/getPostsByTags}}
+            </div>
+
+            <ul class="actions">
+               <li>
+                  {{#getTag @config.custom.editorPicksTagIndicator}}
+                     <a href="{{url}}" class="button">{{ translate 'common.more' }}</a>
+                  {{/getTag}}
+               </li>
+            </ul>
+         </section>
+      {{/if}}
+
+      {{#if @config.custom.getInTouch}}
+         <section>
+            <header class="major">
+               <h2>{{ translate 'partials.sidebar.getInTouch' }}</h2>
+            </header>
+            {{{@config.custom.getInTouchText}}}          
+         </section>
+      {{/if}}
+
+      <footer id="footer">
+         {{{@config.custom.copyrightText}}} 
+      </footer>
+
+      </div>
+   </div>

@@ -1,0 +1,90 @@
+{{!
+	Theme created by TidyCustoms based on Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 & MIT license (html5up.net/license)
+}}
+{{> head}}
+{{> top}}
+
+   {{#author}}
+      <div class="page-header author-header">
+         {{#if authorViewConfig.displayAvatar}}
+            {{#if avatar}}
+               <img 
+                  src="{{avatarImage.url}}" 
+                  {{ lazyload "lazy" }}
+                  height="{{avatarImage.height}}"
+                  width="{{avatarImage.width}}"
+                  alt="{{avatarImage.alt}}"> 
+            {{/if}}
+         {{/if}}
+         <h1>
+            {{name}}
+            {{#if authorViewConfig.displayPostCounter}}<sup>({{postsNumber}})</sup>{{/if}}
+         </h1>
+         {{#if authorViewConfig.displayDescription}} 
+            {{{description}}}
+         {{/if}}
+         {{#if authorViewConfig.displayWebsite}}  
+            {{#if website}}
+               <p class="author-website">
+                  <i class="fas fa-globe"></i>
+                  <a href="{{website}}" target="_blank" rel="nofollow noreferrer noopener">{{ translate 'author.visitWebsite' }}</a>
+               </p>
+            {{/if}}
+         {{/if}}
+      </div>
+
+      {{#if authorViewConfig.displayPostList}}
+         <section>
+            <div class="posts">
+               {{#each ../posts}}
+                  <article>
+                     {{#if @config.custom.feedFeaturedImage}}
+                        {{#featuredImage}}
+                           {{#if url}}
+                              <a href="{{../url}}" class="image fit">
+                                 <img
+                                    src="{{url}}"
+                                    {{#if @config.site.responsiveImages}}
+                                       {{responsiveImageAttributes 'featuredImage' srcset.card sizes.card}}
+                                    {{/if}}
+                                    {{ lazyload "lazy" }}
+                                    height="{{height}}"
+                                    width="{{width}}"
+                                    alt="{{alt}}">
+                              </a>
+                           {{/if}}
+                        {{/featuredImage}}
+                     {{/if}}
+                     <h3>
+                        <a href="{{url}}">{{title}}</a>
+                     </h3>
+
+                     {{#if hasCustomExcerpt}}
+                        {{{ excerpt }}}
+                     {{else}}
+                        <p>{{{ excerpt }}}</p>
+                     {{/if}}
+
+                     {{#if @config.custom.feedReadMore}}
+                        <ul class="actions">
+                           <li>
+                              <a href="{{url}}" class="button">{{ translate 'common.more' }}</a>
+                           </li>
+                        </ul>
+                     {{/if}}
+                  </article>
+               {{/each}}
+            </div>
+         </section>
+         {{> pagination}}
+      {{/if}}
+   {{/author}}
+
+   </div>
+</div>
+{{> sidebar}}
+</div>
+
+{{> footer}}
