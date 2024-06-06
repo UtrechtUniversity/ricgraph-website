@@ -94,7 +94,7 @@
             "errorPage": "404.html",
             "searchPage": "search.html"
         },
-        "customHeadCode": "<!-- For GitHub buttons, see https://buttons.github.io -->\n<script async defer src=\"https://buttons.github.io/buttons.js\"></script>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Open+Sans\">",
+        "customHeadCode": "<meta name=\"author\" content=\"Rik D.T. Janssen\">\n<meta name=\"description\" content=\"Ricgraph - Research in context graph\">\n<meta name=\"keywords\" content=\"Ricgraph, Ricgraph Explorer, Ricgraph REST API, Research in context graph, Graph, Graph database, Data harvesting, Data enrichment, Data linking, Linked data, Knowledge graph, Metadata\">\n  \n<!-- For GitHub buttons, see https://buttons.github.io -->\n<script async defer src=\"https://buttons.github.io/buttons.js\"></script>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Open+Sans\">",
         "customBodyCode": "",
         "customCommentsCode": "",
         "customSearchInput": "",
@@ -226,10 +226,10 @@
             "prefix": ""
         },
         "manual": {
-            "output": "tar-archive",
+            "output": "zip-archive",
             "outputDirectory": "/home/rik-loc/software/ricgraph-website/ricgraph-website"
         }
     },
     "theme": "editorial-2",
-    "syncDate": 1717501863225
+    "syncDate": 1717661102655
 }

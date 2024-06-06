@@ -2,7 +2,7 @@
     {
         "path": "404.html",
         "type": "file",
-        "md5": "e9ef35990c79dd7235b833bfa032379a"
+        "md5": "690a7c089ae7b22359b81adc4e76e196"
     },
     {
         "path": "assets",
@@ -182,27 +182,27 @@
     {
         "path": "/authors/rik-dt-janssen/index.html",
         "type": "file",
-        "md5": "1c42b8418801e2b0f45615041af760fd"
+        "md5": "5f6d5a80ad7b715c80526242471aea18"
     },
     {
-        "path": "contact-2.html",
+        "path": "contact.html",
         "type": "file",
-        "md5": "3b440220e14178c728083f3ca30c6765"
+        "md5": "786ca9b2825b93b6489737fbae83002c"
     },
     {
         "path": "get-ricgraph.html",
         "type": "file",
-        "md5": "ad3fb905cfc7818e6b9cd339ff09d005"
+        "md5": "5f0d24c469dd5582015f797bbda8c069"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "cf65d93d5a75e725b06688c3a6b36b67"
+        "md5": "711e7f2ebbd19371b89bcfa19749669f"
     },
     {
         "path": "learn-more-about-ricgraph.html",
         "type": "file",
-        "md5": "3720b199630ddbe50e915a7d3caa8306"
+        "md5": "20128d953f632ba2596bf394e1ecbcf6"
     },
     {
         "path": "media",
@@ -227,7 +227,7 @@
     {
         "path": "read-more-about-ricgraph.html",
         "type": "file",
-        "md5": "fc9cb40a2b73db266e08e850aeace853"
+        "md5": "a2fbdcf0b796cb209b3e27cdd1ca39e1"
     },
     {
         "path": "robots.txt",
@@ -242,11 +242,11 @@
     {
         "path": "/tags/index.html",
         "type": "file",
-        "md5": "f512b7e2b03fa7815c9a752984125ef1"
+        "md5": "9af3f032f2b482efdd7d817347e79661"
     },
     {
         "path": "what-is-ricgraph.html",
         "type": "file",
-        "md5": "f14ee73e5294aae15e80c631ac1572be"
+        "md5": "f22f48f38917558c5afe6528aef4c87e"
     }
 ]
