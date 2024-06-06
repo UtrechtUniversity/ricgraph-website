@@ -226,10 +226,10 @@
             "prefix": ""
         },
         "manual": {
-            "output": "zip-archive",
+            "output": "tar-archive",
             "outputDirectory": "/home/rik-loc/software/ricgraph-website/ricgraph-website"
         }
     },
     "theme": "editorial-2",
-    "syncDate": 1717661102655
+    "syncDate": 1717663948928
 }
