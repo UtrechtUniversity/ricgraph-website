@@ -50,7 +50,7 @@ Read [Download and install Publii](https://getpublii.com/docs/install-publii.htm
   ```
   cd /srv/www/htdocs
   or 
-  cd /srv/www/html
+  cd /var/www/html
   ```
 * Transfer the file
   *ricgraph-research-in-context-graph-files.tar*
