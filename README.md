@@ -1,3 +1,5 @@
+<img alt="Ricgraph logo" src="https://raw.githubusercontent.com/UtrechtUniversity/ricgraph/refs/heads/main/docs/images/ricgraph_logo.png" height="30">
+
 # Website for Ricgraph - Research in context graph
 
 This repository contains the code and the final published 
@@ -13,11 +15,11 @@ You can find the main Ricgraph website on www.ricgraph.eu. Alternative
 sites are www.ricgraph.nl and www.ricgraph.com.
 
 
-### How to install Publii
+## How to install Publii
 
 Read [Download and install Publii](https://getpublii.com/docs/install-publii.html).
 
-### How to configure Publii for the Ricgraph website
+## How to configure Publii for the Ricgraph website
 * Clone this GitHub repository to your local machine.
 * Open Publii.
 * In the top right of the Publii window, there are 3 stacked dots.
@@ -42,7 +44,7 @@ Read [Download and install Publii](https://getpublii.com/docs/install-publii.htm
   output directory *[local path to this GitHub repository]/ricgraph-website*
   with the name *ricgraph-research-in-context-graph-files.tar*.
 
-### Install the Ricgraph website on your webserver
+## Install the Ricgraph website on your webserver
 * Login as user *root* on your web server.
 * Go to the webserver directory on that server.
   Probably it is in
