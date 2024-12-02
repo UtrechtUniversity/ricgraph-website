@@ -94,7 +94,7 @@
             "errorPage": "404.html",
             "searchPage": "search.html"
         },
-        "customHeadCode": "<meta name=\"author\" content=\"Rik D.T. Janssen\">\n<meta name=\"description\" content=\"Ricgraph - Research in context graph\">\n<meta name=\"keywords\" content=\"Ricgraph, Ricgraph Explorer, Ricgraph REST API, Research in context graph, Graph, Graph database, Data harvesting, Data enrichment, Data linking, Linked data, Knowledge graph, Metadata\">\n  \n<!-- For GitHub buttons, see https://buttons.github.io -->\n<script async defer src=\"https://buttons.github.io/buttons.js\"></script>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Open+Sans\">",
+        "customHeadCode": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1,user-scalable=yes\">\n<meta name=\"author\" content=\"Rik D.T. Janssen\">\n<meta name=\"description\" content=\"Ricgraph - Research in context graph\">\n<meta name=\"keywords\" content=\"Ricgraph, Ricgraph Explorer, Ricgraph REST API, Research in context graph, Graph, Graph database, Data harvesting, Data enrichment, Data linking, Linked data, Knowledge graph, Metadata\">\n\n<!-- For GitHub buttons, see https://buttons.github.io -->\n<script async defer src=\"https://buttons.github.io/buttons.js\"></script>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Open+Sans\">",
         "customBodyCode": "",
         "customCommentsCode": "",
         "customSearchInput": "",
@@ -231,5 +231,5 @@
         }
     },
     "theme": "editorial-2",
-    "syncDate": 1720613526081
+    "syncDate": 1733139502746
 }

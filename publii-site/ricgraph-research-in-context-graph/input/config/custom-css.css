@@ -54,6 +54,10 @@ h6 {
 #sidebar>.inner>* {
     border-bottom: solid 2px blue;
 }
+#sidebar>.inner {
+    padding-left: 1em;
+    padding-right: 1em;
+}
 a:hover {
     color: darkblue;
 }
