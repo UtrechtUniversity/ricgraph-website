@@ -1,5 +1,12 @@
 <img alt="Ricgraph logo" src="https://raw.githubusercontent.com/UtrechtUniversity/ricgraph/refs/heads/main/docs/images/ricgraph_logo.png" height="30">
 
+> Note: March 1, 2025: this repository is not used anymore 
+> to configure, use and install the Ricgraph website
+> [www.ricgraph.eu](https://www.ricgraph.eu).
+> The Ricgraph website
+> repository can be found on 
+> [https://github.com/UtrechtUniversity/ricgraph-documentation](https://github.com/UtrechtUniversity/ricgraph-documentation).
+
 # Website for Ricgraph - Research in context graph
 
 This repository contains the code and the final published 
@@ -62,7 +69,7 @@ Read [Download and install Publii](https://getpublii.com/docs/install-publii.htm
   ```
   wget https://github.com/UtrechtUniversity/ricgraph-website/raw/main/ricgraph-website/ricgraph-research-in-context-graph-files.tar
   ```
-* If directory *ricgragh-website* already exists, remove
+* If directory *ricgraph-website* already exists, remove
   all files in it, and continue with the next step.
   
   If it does not exist, create it:
